@@ -1,0 +1,132 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.login-container {
+    max-width: 350px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-box {
+    background-color: #eef2f5;
+    padding: 35px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #34495e;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db;
+    background-color: #ffffff;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.register-link a:hover {
+    color: #2980b9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .register-link {
+        font-size: 12px;
+    }
+}
